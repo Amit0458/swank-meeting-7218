@@ -1,0 +1,266 @@
+* {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+section {
+    height: 400px;
+    width: 100%;
+    /* padding-top: 4%; */
+}
+
+#bannerBox {
+    background-image: url("/diffjpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+#container {
+    display: flex;
+    text-align: center;
+    width: 85%;
+    flex-direction: column;
+    margin: auto;
+}
+
+#headingAndPara {
+    width: 85%;
+    margin: auto;
+    color: white;
+    margin-top: 10%;
+}
+
+#ready {
+    background-color: red;
+    padding: 5px;
+    font-weight: 600;
+}
+
+#headingAndPara>h5 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+#headingAndPara>p {
+    font-size: 18px;
+}
+
+#searchBoxcParent {
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    opacity: 60%;
+    padding: 2%;
+    padding-bottom: 3%;
+}
+
+#childBox {
+    display: flex;
+    width: 100%;
+}
+
+#city,
+#type,
+#preferences {
+    width: 20%;
+    height: 70%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-bottom: 2px solid black;
+}
+
+#citySelect,
+#typeSelect,
+#preferenceSelect {
+    width: 95%;
+    padding: 5%;
+    height: 100%;
+    border: 0px;
+    font-size: 22px;
+}
+
+#or {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 1%;
+    margin-right: 2%;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+#search {
+    height: 80%;
+    width: 97%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#searchSelect {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+
+#searchbox {
+    padding-bottom: 2%;
+    font-size: 24px;
+    border: 0px;
+    border-bottom: 2px solid black;
+}
+
+#searchButton {
+    padding: 1% 4% 1% 4%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: 0ch;
+    background-color: rgb(213, 0, 0);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+#midConatiner {
+    padding: 2%;
+    height: 440px;
+    width: 75%;
+    /* border: 2px dashed black; */
+    display: flex;
+    margin: auto;
+}
+
+#leftBox {
+    /* border: 1px solid black; */
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    margin: auto;
+
+}
+
+#leftChild>h5 {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 3%;
+    border-bottom: 1px solid gray;
+}
+
+#ForYou {
+    color: red;
+}
+
+#leftChild>p {
+    font-size: 18px;
+    color: rgb(114, 114, 114);
+    padding-top: 3%;
+}
+
+#rightBox {
+    width: 50%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#rightBox>div {
+    margin: auto;
+}
+
+#bottomExpContainer {
+    width: 77%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 2%;
+}
+
+#bottomExpContainer>h1 {
+    text-align: center;
+    font-size: 38px;
+    padding: 2%
+}
+
+#workExp {
+    color: red;
+}
+
+#imageBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    column-gap: 8px;
+}
+
+#imageBox>div {
+    margin: auto;
+    width: 100%;
+
+}
+
+#imageBox>div>img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#upskelling {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    margin-top: 2%;
+    padding-bottom: 5%;
+    border: 1px solid black;
+}
+
+#upskellingChiledBox {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    border: 1px solid blue;
+    margin-top: 5%;
+
+}
+
+#upskellingChiledBox>h1 {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-size: 38px;
+}
+
+#upskellingChiledBox>div {
+    display: flex;
+    margin: auto;
+}
+
+#upskellingChiledBox>div>div {
+    height: auto;
+    width: 45%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+#upskellingChiledBox>div>div>img {
+    width: 100%;
+}
+
+@media all and (min-width:300px) and (max-width:1200px) {
+
+    #bannerBox {
+        height: 200px;
+    }
+
+    /* #childBox {
+        height: max-content;
+    } */
+    #searchBoxcParent {
+        visibility: none;
+        opacity: 0;
+    }
+}
