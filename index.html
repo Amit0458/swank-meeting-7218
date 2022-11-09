@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Pathshala</title>
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="sideBar">
+            <button><img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" alt="menu"></button>
+        </div>
+        <div id="middleArea">
+            <div id="logo"><img src="./ApnaPathsala.png" alt=""></div>
+            <div id="cart"><a href=""><img src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a></div>
+        </div>
+        <div id="signIn">
+            <button><a href="signin.html">SIGN IN</a></button>
+        </div>
+    </nav>
+    <section>
+
+        <div id="bannerBox">
+            <div id="container">
+                <div id="headingAndPara">
+                    <h5>Let’s Get You <span id="ready">Ready</span></h5> <br>
+                    <p>The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An Internship. Get Placed</p>
+                </div>
+                <div id="searchBoxcParent">
+                    <div id="childBox">
+                        <div id="city">
+                            <select name="city" id="citySelect">
+                                <option value="">City...</option>
+                            </select>
+                        </div>
+                        <div id="type">
+                            <select name="Type" id="typeSelect">
+                                <option value="">type...</option>
+                            </select>
+                        </div>
+                        <div id="preferences">
+                            <select name="preferences" id="preferenceSelect">
+                                <option value="">preference...</option>
+                            </select>
+                        </div>
+                        <h3 id="or">OR</h3>
+                        <div>
+                            <div id="search">
+                                <div id="searchSelect">
+                                    <input id="searchbox" type="text" placeholder="Search...">
+                                    <button id="searchButton">SEARCH</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="midConatiner">
+            <div id="leftBox">
+                <div id="leftChild">
+                    <h5>PLETHORA OF OPPORTUNITIES <span id="ForYou">FOR YOU</span> </h5>
+                    <p>We are on a mission to connect employers to young talent all over India.
+                        With our strong corporate network, it will no longer be a challenge to find the right internship
+                        for you</p>
+                </div>
+            </div>
+            <div id="rightBox"></div>
+        </div>
+        <div id="bottomExpContainer">
+            <h1>LET’S GET SOME <span id="workExp">WORK EXPERIENCE</span>
+            </h1>
+            <div id="imageBox"></div>
+        </div>
+        <div id="upskelling">
+            <div id="upskellingChiledBox">
+                <h1>HOW ABOUT <span id="ForYou">UPSKILLING ?</span></h1>
+                <div id="upskellingImage"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script>
+    let companyLogo = [
+        "https://assets.interntheory.com/creative/home-logo/logo-1.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-2.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-3.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-4.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-6.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-7.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-8.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-9.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-10.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-11.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-12.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-13.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-14.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-15.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-16.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-17.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-18.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-19.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-20.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-21.png"
+    ]
+    displayTable0(companyLogo);
+
+    midSection = [
+        "https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg",
+        "https://assets.interntheory.com/creative/home-internships/BD.jpg",
+        "https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg",
+        "https://assets.interntheory.com/creative/home-internships/Graphic.jpg",
+        "https://assets.interntheory.com/creative/home-internships/Finance.jpg",
+        "https://assets.interntheory.com/creative/home-internships/HR.jpg",
+        "https://assets.interntheory.com/creative/home-internships/Eng.jpg",
+        "https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"
+    ]
+    displayTable1(midSection)
+    bottomSection = [
+        "https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg",
+        "https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg",
+        "https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg"
+    ]
+    displayTable2(bottomSection)
+
+    function displayTable0(arr) {
+
+        arr.forEach(element => {
+
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = element;
+            div.append(img);
+            document.querySelector("#rightBox").append(div);
+        });
+    }
+    function displayTable1(arr) {
+
+        arr.forEach(element => {
+
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = element;
+            div.append(img);
+            document.querySelector("#imageBox").append(div);
+        });
+    }
+
+    function displayTable2(arr) {
+
+        arr.forEach(element => {
+
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = element;
+            div.append(img);
+            document.querySelector("#upskellingImage").append(div);
+        });
+    }
+</script>
+
+</html>
