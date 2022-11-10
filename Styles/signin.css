@@ -1,0 +1,183 @@
+#container {
+    height: 800px;
+    width: 100%;
+    background-image: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
+}
+
+
+/***********************************************************/
+
+#box {
+    height: 700px;
+    width: 37%;
+    margin: auto;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+#form {
+    margin: auto;
+    width: 100%;
+    border: 0px solid gray;
+    text-align: justify;
+    padding: 5% 5% 5% 5%;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #dedede;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #134ee5;
+}
+
+#rememberMe {
+    display: flex;
+    align-items: center;
+}
+
+#spacebox {
+    width: 30%;
+}
+#option {
+    height: 50px;
+    width: 100%;
+    opacity: 1;
+}
+#student,#company {
+    width: 49.5%;
+    height: 49px;
+    font-size: 22px;
+    border: none;
+}
+#para {
+    text-align: left;
+    font-size: 16px;
+    color: rgb(123, 123, 123);
+    background-color: rgb(252, 239, 241);
+    padding: 0.5%;
+    border: 1px dashed red;
+    border-radius: 5px;
+    margin-bottom: 2%;
+
+}
+#facebook>div {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  margin-left: 4%;
+}
+#google>div {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-left: 4%;
+}
+#facebookimage,#googleimage {
+    margin-top: 10%;
+    width: 79%;
+}
+
+#facebook,#google {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #134ee5;
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 25%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+#google {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #134ee5;
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 27%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+
+#linkedin {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: #134ee5;
+    color: white;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 25%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+
+}
+#linkedin>div {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin-left: 4%;
+}
+#linkedimage {
+    margin-top: 10%;
+    width: 79%;
+}
+ #vis {
+    visibility: active;
+        opacity: 1;
+        width: 0%;
+        height: 0%;
+ }
+#optionalLoginOption_sec2 {
+    display: none;
+}
+#company ~ .bottomColor,#student ~ .bottomColor {
+
+    border-bottom: 2px solid blue;
+}
+
+

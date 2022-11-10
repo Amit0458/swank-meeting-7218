@@ -1,12 +1,10 @@
 #navbar {
     margin: auto;
     width: 100%;
-    height: 9vh;
+    height: 95px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* border: 2px dashed black; */
-    padding: 1%;
     position: fixed;
     top: 0px;
     background-color: white;
@@ -14,7 +12,7 @@
 
 #sideBar {
     width: 65px;
-    height: 90%;
+    height: 70%;
 }
 
 #sideBar>button {
@@ -30,15 +28,14 @@
 }
 
 #sideBar>button:hover {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(235, 235, 235);
     cursor: pointer;
 }
 
 #signIn>button {
-    background-color: rgb(213, 0, 0);
+    background-color: rgb(156, 21, 32);
     border: 0px;
     padding: 14px 20px 14px 20px;
-    margin-right: 45px;
     border-radius: 8px
 }
 
@@ -50,34 +47,107 @@
 }
 
 #middleArea {
+    height: 80%;
     width: 85%;
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    justify-content: space-around;
+    align-items: center;
 }
 
 #logo {
     width: 18%;
 }
 
-#logo>img {
-    width: 100%;
+#midspace {
+    width: 70%;
+}
+
+#cartBox {
+
+    width: 5%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+
 }
 
 #cart {
-    height: 35px;
-    width: 35px;
-    margin-right: 5px;
-    padding: 1.3%;
-    border-radius: 50%;
+    width: 40%;
+    margin-left: 30%;
 }
 
-#cart>a>img {
-    width: 70%;
-    display: block;
-}
-
-#cart:hover {
-    background-color: rgb(219, 219, 219);
+#cartBox:hover {
+    background-color: rgb(235, 235, 235);
     cursor: pointer;
+}
+
+@media all and (min-width:200px) and (max-width:549px) {}
+
+@media all and (min-width:200px) and (max-width:549px) {
+    #navbar {
+        min-height: 80px;
+        min-width: 100%;
+    }
+
+    #cartBox {
+        width: 25%;
+    }
+
+    #middleArea {
+        width: 80%;
+    }
+
+    #midspace {
+        width: 70%;
+    }
+
+    #cart {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    #logo {
+        width: 35%;
+    }
+    #signIn {
+        visibility: none;
+        opacity: 0;
+        width: 0%;
+        height: 0%;
+    }
+}
+
+@media all and (min-width:550px) and (max-width:1250px) {
+    #navbar {
+        min-height: 90px;
+        min-width: 100%;
+    }
+
+    #middleArea {
+        width: 98%;
+        justify-content: right;
+    }
+
+    #midspace {
+        width: 90%;
+    }
+
+    #cartBox {
+        width: 10%;
+    }
+
+    #cart {
+        width: 35%;
+    }
+
+    #logo {
+        width: 25%;
+    }
+    #signIn {
+        visibility: none;
+        opacity: 0;
+        width: 0%;
+        height: 0%;
+    }
 }
