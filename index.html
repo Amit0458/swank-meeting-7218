@@ -162,54 +162,57 @@
         </div>
     </section>
 
-    <div id="sideBar1" class="sideclass">
-        <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2516/2516745.png" alt="hamburger" height="20px"
-                title="hamburger" id="hamburger" />
-            <img src="ApnaPathsala.png" alt="" height="50px" />
-        </div>
+
+
+    <!-- side menu  -->
+
+    <div class="side_bar" >
+        <div id="sideBarTop">
+            <button id="hamburger2"><img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" alt="menu"></button>
+        <img id="logo1" src="./ApnaPathsala.png" alt="">
+        </div> 
         <div id="contents">
+        <ul>
+            <li>
+                <a href="index.html"><img src="" alt=""><i class="fa-solid fa-house"></i><p>Home</p></a>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-list"></i></i><p>Internships</p></a>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""><i class="fa-solid fa-briefcase"></i><p>Jobs</p></a>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""><i class="fa-brands fa-stack-overflow"></i><p>Post Internship</p></a>
+            </li>
+            <li>
+                <a><img src="" alt=""><i class="fa-solid fa-book"></i><p>Courses</p> <div></div><i class="fa-solid fa-chevron-down courses" onclick="expand('.under-sec1')"></i></a>
+                <div class="under-sec1">
+                  <a href="courses/courses.html" target="_blank">Online Courses</a>
+                  <a href="courses/courses.html" target="_blank">Classroom Training</a>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""><i class="fa-solid fa-phone"></i><p>Contact Us</p></a>
+            </li>
+        </ul>
+        <ul>
+            <li><a><img src="" alt=""><i class="fa-solid fa-lines-leaning"></i><p>Register</p><i class="fa-solid fa-chevron-down register" onclick="expand('.under-sec2')"></i></a>
+                <div class="under-sec2">
+                  <a>Student</a>
+                  <a>Company</a>
+                </div>
+            </li>
 
-            <a href="index.html"><img src="" alt=""><i class="fa-solid fa-house"></i>
-                <p>Home</p>
-            </a>
-
-
-            <a href=""><i class="fa-solid fa-list"></i></i>
-                <p>Internships</p>
-            </a>
-
-
-            <a href=""><img src="" alt=""><i class="fa-solid fa-briefcase"></i>
-                <p>Jobs</p>
-            </a>
-
-
-            <a href=""><img src="" alt=""><i class="fa-brands fa-stack-overflow"></i>
-                <p>Post Internship</p>
-            </a>
-
-
-            <a href=""><img src="" alt=""><i class="fa-solid fa-book"></i>
-                <p>Courses</p>
-            </a>
-
-
-            <a href=""><img src="" alt=""><i class="fa-solid fa-phone"></i>
-                <p>Contact Us</p>
-            </a>
-
-            <hr>
-
-            <a href=""><img src="" alt=""><i class="fa-solid fa-lines-leaning"></i>
-                <p>Register</p>
-            </a>
-
-
-            <a href=""><img src="" alt=""><i class="fa-solid fa-door-open"></i>
-                <p>Login</p>
-            </a>
-
+            <li>
+                <a><img src="" alt=""><i class="fa-solid fa-door-open"></i><p>Login</p><i class="fa-solid fa-chevron-down login" onclick="expand('.under-sec3')" style="margin-left: 45%;"></i></a>
+            <div class="under-sec3">
+              <a href="login.html" target="_blank">Student</a>
+              <a href="login.html"  target="_blank">Login</a>
+            </div>
+            </li>
+        </ul>
+               
         </div>
     </div>
 
@@ -218,8 +221,13 @@
 
 
 
+
+
+
+
+
 </body>
-<script>
+<!-- <script>
     let companyLogo = [
         "https://assets.interntheory.com/creative/home-logo/logo-1.png",
         "https://assets.interntheory.com/creative/home-logo/logo-2.png",
@@ -302,20 +310,49 @@
 
     function sideMenu() {
 
-        let values = document.getElementById("side-menu")
-
-        values.classList.add("move")
+        document.querySelector(".side_bar").classList.add("side-class");
 
     }
 
-    document.getElementById("hamburger").addEventListener("click", sideMenu1);
+    document.getElementById("hamburger2").addEventListener("click", sideMenu1);
     function sideMenu1() {
 
-        let values = document.getElementById("side-menu")
 
-        values.classList.remove("move")
+document.querySelector(".side_bar").classList.remove("side-class");
+
+}
+
+/*********************************side bar expend menu*****************************************/ 
+
+function expand(p){
+    document.querySelector(p).classList.toggle("expand")
+
+    if(p==".under-sec1"){
+        if (document.querySelector(".courses").classList.contains("fa-chevron-down")) {
+            document.querySelector(".courses").classList.replace("fa-chevron-down","fa-chevron-up")
+        } else if (document.querySelector(".courses").classList.contains("fa-chevron-up")) {
+            document.querySelector(".courses").classList.replace("fa-chevron-up","fa-chevron-down")
+        }
 
     }
-</script>
+    if(p==".under-sec2"){
+        if (document.querySelector(".register").classList.contains("fa-chevron-down")) {
+            document.querySelector(".register").classList.replace("fa-chevron-down","fa-chevron-up")
+        } else if (document.querySelector(".register").classList.contains("fa-chevron-up")) {
+            document.querySelector(".register").classList.replace("fa-chevron-up","fa-chevron-down")
+        }
 
+    }
+    if(p==".under-sec3"){
+        if (document.querySelector(".login").classList.contains("fa-chevron-down")) {
+            document.querySelector(".login").classList.replace("fa-chevron-down","fa-chevron-up")
+        } else if (document.querySelector(".login").classList.contains("fa-chevron-up")) {
+            document.querySelector(".login").classList.replace("fa-chevron-up","fa-chevron-down")
+        }
+
+    }
+}
+
+</script> -->
+<script src="./Scripts/index.js"></script>
 </html>
