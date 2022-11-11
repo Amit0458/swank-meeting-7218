@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="./Styles/navbar.css">
     <link rel="stylesheet" href="./Styles/signin.css">
+    <script src="https://kit.fontawesome.com/3c6364f3fa.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -37,36 +38,92 @@
                         <button id="student" class="bottomColor">Student</button>
                         <button id="company">Company</button>
                     </div>
+                    
                 </div>
-                
+                <h3 id="login">Login</h3>
                 <div id="optionalLoginOption_sec1">
                     <div id="para">
-                        <p>If you are a company looking to hire interns, please login as a company by clicking <a href=''>here .</a></p>
+                        <p>If you are a company looking to hire interns, please login as a company by clicking <a href=''>here</a>.</p>
                     </div>
                         <a  href="https://www.facebook.com/login/" id="facebook"><div><img id="facebookimage" src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg" alt="" ><span></span></div>SIGN IN WITH FACEBOOK</a>
                         <br>
                         <a  href="gmail.com" id="google"><div><img id="googleimage" src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg" alt="" ><span></span></div>SIGN IN WITH GOOGLE</a> <br>
+                        <h5 id="or">OR</h5>
                 </div>
                 <div id="optionalLoginOption_sec2">
                     <div id="para">
                         <p>If you are a student looking for internships, please login as a student by clicking <a href=''>here .</a></p>
                     </div>
-                    <a  href='https://www.facebook.com/login/' id='linkedin' ><div><img id='linkedimage' src='https://www.interntheory.com/assets/iconsLogos/linkedin.svg' alt='' ><span></span></div>SIGN IN WITH FACEBOOK</a>
+                    <a  href='https://www.facebook.com/login/' id='linkedin' ><div><img id='linkedimage' src='https://www.interntheory.com/assets/iconsLogos/linkedin.svg' alt='' ><span></span></div>SIGN IN WITH LINKEDIN</a> <br>
+                    <h5 id="or">OR</h5>
                 </div>
                 <div id="form">
-                    <h5>Log in</h5>
-                    <form>
+                    <form id="forminner">
                         <input type="text" name="" id="email" placeholder="Email/Number"> <br>
                         <input type="password" id="pass" placeholder="Password"> <br>
-                        <div id="rememberMe"><input type="checkbox" id="check"> <span>Remember Me</span>
-                        <div id="spacebox"></div> <span><a href="">Forgot Password?</a> </span></div>
-                        <h3>Don't have an account? <a href="index.html">Create your account</a></h3>
+                        <div id="rememberMe">
+                            <input type="checkbox" id="check"> <span>Remember Me</span>
+                            <div id="spacebox"></div> 
+                            <span><a href="">Forgot Password?</a> 
+                            </span>
+                        </div>
+                        <h3 id="dontHaveAcc">Don't have an account? <a href="index.html">Create your account</a></h3>
                     <input type="submit" value="LOGIN">
                 </form>
                 </div>
             </div>
         </div>        
     </section>
+
+    <div class="side_bar" >
+        <div id="sideBarTop">
+            <button id="hamburger2"><img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png" alt="menu"></button>
+        <img id="logo1" src="./ApnaPathsala.png" alt="">
+        </div> 
+        <div id="contents">
+        <ul>
+            <li>
+                <a href="index.html"><img src="" alt=""><i class="fa-solid fa-house"></i><p>Home</p></a>
+            </li>
+            <li>
+                <a href=""><i class="fa-solid fa-list"></i></i><p>Internships</p></a>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""><i class="fa-solid fa-briefcase"></i><p>Jobs</p></a>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""><i class="fa-brands fa-stack-overflow"></i><p>Post Internship</p></a>
+            </li>
+            <li>
+                <a><img src="" alt=""><i class="fa-solid fa-book"></i><p>Courses</p> <div></div><i class="fa-solid fa-chevron-down courses" onclick="expand('.under-sec1')"></i></a>
+                <div class="under-sec1">
+                  <a href="courses/courses.html" target="_blank">Online Courses</a>
+                  <a href="courses/courses.html" target="_blank">Classroom Training</a>
+                </div>
+            </li>
+            <li>
+                <a href=""><img src="" alt=""><i class="fa-solid fa-phone"></i><p>Contact Us</p></a>
+            </li>
+        </ul>
+        <ul>
+            <li><a><img src="" alt=""><i class="fa-solid fa-lines-leaning"></i><p>Register</p><i class="fa-solid fa-chevron-down register" onclick="expand('.under-sec2')"></i></a>
+                <div class="under-sec2">
+                  <a>Student</a>
+                  <a>Company</a>
+                </div>
+            </li>
+
+            <li>
+                <a><img src="" alt=""><i class="fa-solid fa-door-open"></i><p>Login</p><i class="fa-solid fa-chevron-down login" onclick="expand('.under-sec3')" style="margin-left: 45%;"></i></a>
+            <div class="under-sec3">
+              <a href="login.html" target="_blank">Student</a>
+              <a href="login.html"  target="_blank">Login</a>
+            </div>
+            </li>
+        </ul>
+               
+        </div>
+    </div>
 
     <div id="footerContainer">
         <div id="footerTop">
@@ -134,6 +191,37 @@
     document.querySelector("#student").style.borderBottom = "2px solid blue"
 
     });
+  
+/*******************side bar**********************************/ 
+function expand(p){
+    document.querySelector(p).classList.toggle("expand")
+
+    if(p==".under-sec1"){
+        if (document.querySelector(".courses").classList.contains("fa-chevron-down")) {
+            document.querySelector(".courses").classList.replace("fa-chevron-down","fa-chevron-up")
+        } else if (document.querySelector(".courses").classList.contains("fa-chevron-up")) {
+            document.querySelector(".courses").classList.replace("fa-chevron-up","fa-chevron-down")
+        }
+
+    }
+    if(p==".under-sec2"){
+        if (document.querySelector(".register").classList.contains("fa-chevron-down")) {
+            document.querySelector(".register").classList.replace("fa-chevron-down","fa-chevron-up")
+        } else if (document.querySelector(".register").classList.contains("fa-chevron-up")) {
+            document.querySelector(".register").classList.replace("fa-chevron-up","fa-chevron-down")
+        }
+
+    }
+    if(p==".under-sec3"){
+        if (document.querySelector(".login").classList.contains("fa-chevron-down")) {
+            document.querySelector(".login").classList.replace("fa-chevron-down","fa-chevron-up")
+        } else if (document.querySelector(".login").classList.contains("fa-chevron-up")) {
+            document.querySelector(".login").classList.replace("fa-chevron-up","fa-chevron-down")
+        }
+
+    }
+}
 
 </script>
+
 </html>
