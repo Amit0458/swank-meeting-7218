@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration</title>
+    <link rel="stylesheet" href="./Styles/comapny.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="sideBar">
+                <button id="hamburger1"><img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"
+                        alt="menu"></button>
+            </div>
+            <div id="middleArea">
+                <a href="index.html"><img id="logo" src="./ApnaPathsala.png" alt=""></a>
+                
+                <div id="midspace"></div>
+                <div id="cartBox"><a href="cart.html"><img id="cart"
+                            src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a></div>
+            </div>
+            <div id="signIn">
+                <button><a href="signin.html">SIGN IN</a></button>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="upperContainer">
+            <div>
+                <h1> <span>17092</span>  Companies</h1>
+            </div>
+            <div>
+                <h5>Trust Us With Their Intern Requirements</h5>
+                <h3>Wouldn't You?</h3>
+            </div>
+            <div id="imageBox"></div>
+        </div>
+        <aside>
+            <div id="container">
+
+                <div id="box">
+                        
+                    <h3 id="login">Login</h3>
+                    <h3 id="dontHaveAcc">Don't have an account? <a href="index.html">Create your account</a></h3>
+                        <div id="para">
+                            <p>If you are a company looking to hire interns, please login as a company by clicking <a href=''>here</a>.</p>
+                        </div>
+                            <br>
+                            <h5 id="or">OR</h5>
+                 
+                    <div>
+                        <a  href="" id='linkedin' ><div><img id='linkedimage' src='https://www.interntheory.com/assets/iconsLogos/linkedin.svg' alt='' ><span></span></div>SIGN IN WITH LINKEDIN</a> <br>
+                    </div>
+                    <div id="form">
+                        <form id="forminner">
+                            <input type="text" name="" id="email" placeholder="Email/Number"> <br>
+                            <input type="password" id="pass" placeholder="Password"> <br>
+                            <div id="rememberMe">
+                                <input type="checkbox" id="check"> <span>Remember Me</span>
+                                <div id="spacebox"></div> 
+                                <span><a href="">Forgot Password?</a> 
+                                </span>
+                            </div>
+                            
+                        <input type="submit" value="LOGIN">
+                    </form>
+                    </div>
+                </div>
+            </div> 
+        </aside>
+    </section>
+</body>
+<script>
+    comapanyLogo = [
+    "https://assets.interntheory.com/creative/home-logo/logo-1.png",
+    
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-2.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-3.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-4.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-5.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-6.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-7.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-8.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-9.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-10.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-11.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-12.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-13.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-14.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-15.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-16.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-17.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-18.png",
+    "https://assets.interntheory.com/creative/home-logo/logo-18.png",
+    "https://assets.interntheory.com/creative/home-logo-colored/logo-20.png"
+    
+    ]
+    comapanyLogo.forEach(element => {
+        let div = document.createElement("div")
+        let img = document.createElement("img")
+        img.src = element;
+        div.append(img);
+        document.querySelector("#imageBox").append(div);
+    });
+</script>
+</html>
