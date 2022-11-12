@@ -1,21 +1,54 @@
 * {
-    box-sizing: border-box;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
-#container {
-    height: auto;
-    width: 100%;
+section {
     background-image: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
+    display: flex;
 }
-#box {
+#upperContainer {
     height: auto;
     width: 40%;
+    padding-top: 110px;
+    text-align: center;
+    margin-left: 35px;
+}
+#upperContainer>div>h1 {
+    font-size: 3em;
+}
+#upperContainer>div>h1>span {
+    color: rgb(223, 30, 46);
+}
+#upperContainer>div+div>h5 {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgb(60, 72, 88);
+}
+#upperContainer>div+div>h3 {
+    font-size: 1.3em;
+    color: rgb(60, 72, 88);
+    margin-top: -28px;
+    font-weight: 700;
+}
+
+#imageBox {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 20px 10px;
+}
+/* ****************signUp********************************** */
+
+#box {
+    height: 800px;
+    width: 70%;
     margin: auto;
     align-items: center;
     margin-top: 10%;
     margin-bottom: 5%;
     padding: 3%;
     background-color: white;
+    border: 2px solid blue;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 }
@@ -25,6 +58,8 @@
     font-weight: 500;
 }
 #or {
+    margin: auto;
+    text-align: center;
     color: rgb(153, 153, 153);
 }
 #form {
@@ -97,26 +132,7 @@ a {
     font-weight: 500;
     color: rgb(153, 153, 166);
 }
-#option {
-    height: 50px;
-    width: 100%;
-}
-#student,#company {
-    width: 49.5%;
-    height: 49px;
-    font-size: 0.95em;
-    border: none;
-    color: rgb(117, 117, 117);
-    background-color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-#student:hover {
-    color: rgb(8, 124, 221);
-}
-#company:hover {
-    color: rgb(8, 124, 221);
-}
+
 #para {
     text-align: left;
     font-size: 16px;
@@ -128,56 +144,7 @@ a {
     margin-bottom: 2%;
 
 }
-#facebook>div {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  margin-left: 4%;
-  border-radius: 5px;
-}
-#google>div {
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    margin-left: 4%;
-    border-radius: 5px;
-}
-#facebookimage,#googleimage {
-    margin-top: 10%;
-    width: 79%;
-}
 
-#facebook,#google {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(66, 103, 178);
-    color: white;
-    justify-content: space-between;
-    text-decoration: none;
-    padding-right: 25%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    border-radius: 5px;
-}
-#google {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(12, 129, 224);
-    color: white;
-    justify-content: space-between;
-    text-decoration: none;
-    padding-right: 27%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    border-radius: 5px;
-}
-#google:hover {
-    background-color: rgb(5, 86, 154);
-}
 #linkedin {
     display: flex;
     text-align: center;
@@ -215,5 +182,3 @@ a {
     border-bottom: 2px solid blue;
 
 }
-
-

@@ -125,3 +125,74 @@ function expand(p){
 }
 
 
+/****************************************************************slider**************************** */
+
+mainPageReviewSectionSlidingArea = [ 
+    {
+        "img": "https://assets.interntheory.com/img/testimonial-image/in3.jpg",
+        "name": "Amani Nagda",
+        "description": "I was on a look out for an internship to spend my summer productively and I stumbled upon Inter Theory. Their team was very kind and kept me updated. I applied for Viacom18 and got through. I thank Intern Theory team for giving me this opportunity.",
+        "job": "Interrn at Viacom18"
+
+    },
+    {
+        "img": "https://assets.interntheory.com/img/testimonial-image/in2.jpg",
+        "name": "Siddharth Viyappu",
+        "description": "I created my profile because I had before Intern Theory, not come across a consultancy that would execute the responsibility of getting a result for your application irrespective of being failure or success the way they did. They've set the bars really high! Kudos team!",
+        "job": "Intern at Gooseberry Homes"
+
+    },
+    {
+        "img": "https://assets.interntheory.com/img/testimonial-image/in1.jpg",
+        "name": "Sshikha Bodwaani",
+        "description": "We have been using InternTheory for over a year now and are very happy with the quality of applications that we receive. Their team has been very helpful in screening applications for the various internship requirements we had. It has been a delight working with them.",
+        "job": "Sr. Exec. HR at BookMyShow"
+
+    },
+    {
+        "img": "https://assets.interntheory.com/img/testimonial-image/in4.jpg",
+        "name": "Harshil Bhadra",
+        "description": "If you are more than satisfied with a particular product/firm who gives you more than you expect then there’s no need to find a substitute. Its similar with Intern Theory, the best team who makes continuous efforts and always ready to help! Thanks for giving me the best start.",
+        "job": "Intern at Porsche"
+    }
+
+]
+
+
+
+let x = 0;
+// setInterval(() => {
+//     if(x % -700 == 0) {
+//         generate();
+//     }
+//     x-=700;
+//     console.log(x);
+//     document.querySelector(".contentBox").style.marginLeft = `${x}%`;
+ 
+// },2000);
+function generate() {
+    mainPageReviewSectionSlidingArea.forEach( (element)  => {
+        let div = document.createElement("div");
+        let innerDiv1 = document.createElement("div");
+        let img = document.createElement("img");
+        img.src = element.img;
+        let name = document.createElement("h2");
+        name.textContent = element.name; 
+        let comp = document.createElement("h5");
+        comp.textContent = element.job;
+        innerDiv1.append(img,name,comp);
+        let innerDiv2 = document.createElement("div");
+        let para = document.createElement("p");
+        para.textContent = element.description;
+        innerDiv2.append(para);
+        div.append(innerDiv1,innerDiv2);
+        document.querySelector(".contentBox").append(div);
+
+        // console.log(element)
+    })
+    
+
+}
+// generate();
+
+

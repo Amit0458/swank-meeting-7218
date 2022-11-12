@@ -65,36 +65,7 @@ FrontPageSection = [
     }
 ]
 
-mainPageReviewSectionSlidingArea = [
-    amaniNagda = {
-        "img": "https://assets.interntheory.com/img/testimonial-image/in3.jpg",
-        "name": "Amani Nagda",
-        "description": "I was on a look out for an internship to spend my summer productively and I stumbled upon Inter Theory. Their team was very kind and kept me updated. I applied for Viacom18 and got through. I thank Intern Theory team for giving me this opportunity.",
-        "job": "Interrn at Viacom18"
 
-    },
-    siddharthViyappu = {
-        "img": "https://assets.interntheory.com/img/testimonial-image/in2.jpg",
-        "name": "Siddharth Viyappu",
-        "description": "I created my profile because I had before Intern Theory, not come across a consultancy that would execute the responsibility of getting a result for your application irrespective of being failure or success the way they did. They've set the bars really high! Kudos team!",
-        "job": "Intern at Gooseberry Homes"
-
-    },
-    siddharthViyappu = {
-        "img": "https://assets.interntheory.com/img/testimonial-image/in1.jpg",
-        "name": "Sshikha Bodwaani",
-        "description": "We have been using InternTheory for over a year now and are very happy with the quality of applications that we receive. Their team has been very helpful in screening applications for the various internship requirements we had. It has been a delight working with them.",
-        "job": "Sr. Exec. HR at BookMyShow"
-
-    },
-    harshilBhadra = {
-        "img": "https://assets.interntheory.com/img/testimonial-image/in4.jpg",
-        "name": "Harshil Bhadra",
-        "description": "If you are more than satisfied with a particular product/firm who gives you more than you expect then there’s no need to find a substitute. Its similar with Intern Theory, the best team who makes continuous efforts and always ready to help! Thanks for giving me the best start.",
-        "job": "Intern at Porsche"
-    }
-
-]
 /******************************************************sign in page********************************************************/
 background_img = "https://assets.interntheory.com/creative/Web-Banner.jpg";
 /*****************************************************Course Page**********************************************************/
@@ -111,7 +82,7 @@ courseSectionBannerTopBanner = [
 heading = "Certified Online Courses";
 paragraph = "Upgrade your skills with Intern Theory's online learning platform. Enrol for any certified online courses and get a step ahead of competition. Select from a range of skill based online courses and kickstart your career.";
 courseSectionMidBox = [
-    img = [
+    courseSectionMidBox = [
         "https://assets.interntheory.com/creative/courses/thumbnails/it.jpg",
         "https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",
         "https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png",
