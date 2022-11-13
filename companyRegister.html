@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Registration</title>
+    <link rel="shortcut icon" href="./ApnaPathsala.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./ApnaPathsala.png" type="image/x-icon">
     <link rel="stylesheet" href="./Styles/comapny.css">
     <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <style>
+        * {
+            list-style: none;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav id="navbar">
@@ -17,20 +27,20 @@
             </div>
             <div id="middleArea">
                 <a href="index.html"><img id="logo" src="./ApnaPathsala.png" alt=""></a>
-                
+
                 <div id="midspace"></div>
-                <div id="cartBox"><a href="cart.html"><img id="cart"
-                            src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a></div>
+                <div id="cartBox"><a href="cart.html"><img class="cart"
+                    src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a><span class="cartDisplay"></span> </div>
             </div>
             <div id="signIn">
                 <button><a href="signin.html">SIGN IN</a></button>
             </div>
         </nav>
     </header>
-    <section>
+    <section id="section1">
         <div id="upperContainer">
             <div>
-                <h1> <span>17092</span>  Companies</h1>
+                <h1> <span>17092</span> Companies</h1>
             </div>
             <div>
                 <h5>Trust Us With Their Intern Requirements</h5>
@@ -41,62 +51,154 @@
         <aside>
             <div id="container">
 
-                <div id="box">
-                        
-                    <h3 id="login">Login</h3>
-                    <h3 id="dontHaveAcc">Don't have an account? <a href="index.html">Create your account</a></h3>
-                        <div id="para">
-                            <p>If you are a company looking to hire interns, please login as a company by clicking <a href=''>here</a>.</p>
-                        </div>
-                            <br>
-                            <h5 id="or">OR</h5>
-                 
+                <div id="boxTop">
                     <div>
-                        <a  href="" id='linkedin' ><div><img id='linkedimage' src='https://www.interntheory.com/assets/iconsLogos/linkedin.svg' alt='' ><span></span></div>SIGN IN WITH LINKEDIN</a> <br>
+                        <h3 id="login">Start Hiring Interns</h3>
+                        <h3 id="dontHaveAcc">ALready have an account? <a href="signin.html">Sign in</a></h3>
+
+                        <div id="para">
+                            <p>If you are a company looking to hire interns, please login as a company by clicking <a
+                                    href='signin.html'>here</a>.</p>
+                        </div>
                     </div>
+                    <div>
+                        <a href="" id='linkedin'>
+                            <div><img id='linkedimage' src='https://www.interntheory.com/assets/iconsLogos/linkedin.svg'
+                                    alt=''><span></span></div>SIGN IN WITH LINKEDIN
+                        </a> <br>
+                    </div>
+                    <br>
+                    <h5 id="or">OR</h5>
                     <div id="form">
                         <form id="forminner">
-                            <input type="text" name="" id="email" placeholder="Email/Number"> <br>
-                            <input type="password" id="pass" placeholder="Password"> <br>
-                            <div id="rememberMe">
-                                <input type="checkbox" id="check"> <span>Remember Me</span>
-                                <div id="spacebox"></div> 
-                                <span><a href="">Forgot Password?</a> 
-                                </span>
+                            <div>
+                                <input type="text" id="name" placeholder="First Name">
+                                <div></div>
+                                <input type="text" id="lastName" placeholder="Last Name">
                             </div>
-                            
-                        <input type="submit" value="LOGIN">
-                    </form>
+
+                            <input type="text" id="ComapanyName" placeholder="Company Name *"> <br>
+                            <input type="number" id="mob" placeholder="Mobile Number *"> <br>
+                            <input type="text" name="" id="email"
+                                placeholder="Emai (Please use a corporate email only)"> <br>
+                            <input type="password" id="pass" placeholder="Password"> <br>
+                            <select name="" id="ref">
+                                <option value="friend">From a Friend</option>
+                                <option value="google">Google search</option>
+                                <option value="socialMedia">Social Media</option>
+                                <option value="other">Others</option>
+                            </select>
+                            <br>
+                            <input type="submit" value="PROCEED TO POSTING INTERNSHIP">
+                        </form>
                     </div>
                 </div>
-            </div> 
+            </div>
         </aside>
     </section>
+    <section>
+        <div id="midCont">
+            <div id="topTree">
+                <img src="https://assets.interntheory.com/creative/chart.png" alt="Count Tree">
+            </div>
+
+            <div id="bottomText">
+                <h5>WE ARE CONSTANTLY <span class="redfont">GROWING</span></h5>
+                <p>We are on a mission to help every student in India. Upgrading your CV and getting you a
+                    meaningful job remains our sole motive and we are not stopping anytime soon.</p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div id="footerContainer">
+            <div id="footerTop">
+                <div id="logos">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div id="tablebox">
+                    <div id="byPlace">
+
+                        <ul>
+                            <p>By Place</p>
+                            <hr> <br>
+                            <li> <a href="">Internships In Mumbai</a> </li>
+                            <li><a href="">Internships In Delhi</a> </li>
+                            <li><a href="">Internships In Bangalore</a> </li>
+                            <li><a href="">Internships In Pune</a> </li>
+                            <li><a href="">Internships In Hyderabad</a></li>
+                        </ul>
+                    </div>
+                    <div id="byProfile">
+                        <ul>
+                            <p>By Profile</p>
+                            <hr> <br>
+                            <li><a href="">Marketing Internships</a></li>
+                            <li><a href="">Business Development Internships</a></li>
+                            <li><a href="">Content Writing Internships</a></li>
+                            <li><a href="">Graphic Designing Internships</a></li>
+                            <li><a href="">HR Internships</a></li>
+                            <li><a href="">Engineering Internships</a></li>
+                        </ul>
+                    </div>
+                    <div id="byType">
+                        <ul>
+                            <p>By Type</p>
+                            <hr> <br>
+                            <li><a href="">Full Time Internships</a></li>
+                            <li><a href="">Part Time Internships</a></li>
+                            <li><a href="">Work From Home Internships</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div id="privacyPloiciy">
+            <div>
+                <ul>
+                    <p>REFUND & CANCELLATION POLICY</p>
+                    <p>COURSES</p>
+                    <p>TERMS AND CONDITIONS</p>
+                    <p>PRIVACY POLICY</p>
+                    <p>CONTACT US</p>
+                    <p>ABOUT US</p>
+                    <p>SITEMAP</p>
+                </ul>
+            </div>
+            <div>
+                <p>© 2015 - 2022 APNAPATHSHALA. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 <script>
     comapanyLogo = [
-    "https://assets.interntheory.com/creative/home-logo/logo-1.png",
-    
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-2.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-3.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-4.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-5.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-6.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-7.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-8.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-9.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-10.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-11.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-12.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-13.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-14.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-15.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-16.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-17.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-18.png",
-    "https://assets.interntheory.com/creative/home-logo/logo-18.png",
-    "https://assets.interntheory.com/creative/home-logo-colored/logo-20.png"
-    
+        "https://assets.interntheory.com/creative/home-logo/logo-1.png",
+
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-2.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-3.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-4.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-5.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-6.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-7.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-8.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-9.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-10.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-11.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-12.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-13.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-14.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-15.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-16.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-17.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-18.png",
+        "https://assets.interntheory.com/creative/home-logo/logo-18.png",
+        "https://assets.interntheory.com/creative/home-logo-colored/logo-20.png"
+
     ]
     comapanyLogo.forEach(element => {
         let div = document.createElement("div")
@@ -105,5 +207,50 @@
         div.append(img);
         document.querySelector("#imageBox").append(div);
     });
+
+//*****************************************************************
+document.getElementById("hamburger1").addEventListener("click", sideMenu);
+
+    function sideMenu() {
+        document.querySelector(".side_bar").classList.add("side-class");
+    }
+
+    document.getElementById("hamburger2").addEventListener("click", sideMenu1);
+    function sideMenu1() {
+        document.querySelector(".side_bar").classList.remove("side-class");
+    }
+
+// ****************************************************Registration*********************************************
+let compLogData = JSON.parse(localStorage.getItem("Comp_log_data")) || [];    
+
+document.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    let name = document.querySelector("#name").value;
+    let last_name = document.querySelector("#lastName").value;
+    let compName = document.querySelector("#ComapanyName").value;
+    let mobile = document.querySelector("#mob").value;
+    let email= document.querySelector("#email").value;
+    let password = document.querySelector("#pass").value;
+    let referal = document.querySelector("#ref").value;
+    if(a == "" || b == "" || c == "" || d == "" || d == "" || e == "" || f == "" ) {
+        alert("please fill all the filds!")
+    }
+    else {
+        let obj = {
+            name,
+            last_name,
+            compName,
+            mobile,
+            email,
+            password,
+            referal,
+        }
+        compLogData.push(obj);
+        localStorage.setItem("Comp_log_data",JSON.stringify(compLogData));
+        alert("Succesfully Registered ! \n Please sign in");
+    }
+        
+    });
 </script>
+<!-- <script src="./Scripts/index.js"></script> -->
 </html>

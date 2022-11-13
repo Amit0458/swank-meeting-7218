@@ -1,6 +1,10 @@
 * {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    list-style: none;
+
+
 }
+
 section {
     width: 100%;
     height: 1500px;
@@ -13,10 +17,11 @@ section {
     background-image: url("https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg");
     image-resolution: 1080px;
     background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     justify-content: center;
+    width: 100%;
     margin: auto;
-    opacity: 70;
 }
 
 #innerBox {
@@ -29,28 +34,33 @@ section {
     margin-bottom: 5%;
     padding: 5%;
 }
+
 #innerBox>img {
     width: 75%;
     margin: auto;
     opacity: 100;
 }
+
 #contentBox {
     width: 85%;
     height: 600px;
     margin: auto;
     color: rgb(114, 114, 114);
 }
+
 #contentBox>h3 {
     font-size: 1.6em;
     font-weight: 300;
     margin-top: 4%;
 }
+
 #contentBox>h3+p {
     font-size: 1em;
     margin-top: -1%;
     margin-bottom: 5%;
     line-height: 2em;
 }
+
 #heading {
     font-size: 1.2em;
     font-weight: 700;
@@ -59,27 +69,28 @@ section {
 }
 
 #contentCards {
-    height: 80%;
-    width: 90%;
+    height: 85%;
     margin: auto;
 }
 
 #contentCards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px 10px;
 }
+
 .card {
-    width: 95%;
-    padding: 5%;
-    border-radius: 5px;
+    padding:10px;
+    border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 .card img {
     width: 100%;
     height: 30%;
-    
+
 }
+
 .priceBox>h5 {
     color: rgb(117, 117, 117);
     text-decoration: line-through;
@@ -87,46 +98,55 @@ section {
     font-size: 0.85em;
     font-weight: 200;
 }
-.priceBox>h3  {
-  color: black;
+
+.priceBox>h3 {
+    color: black;
 }
+
 .cardBottom {
     text-align: right;
 }
+
 .cardBottom>h3 {
     font-size: 1em;
     color: rgb(255, 179, 101);
 }
+
 .priceBox {
     display: flex;
     justify-content: right;
     border-top: 1px dashed rgb(170, 170, 170);
     margin-bottom: -10%;
 }
+
 .buttonBox {
     display: flex;
     justify-content: right;
     padding-bottom: 7%;
 }
+
 .buttonBox>h3 {
     color: rgb(8, 124, 221);
     font-size: 0.9em;
     margin-right: 3%;
     font-weight: 600;
 }
+
 .buttonBox>button {
-font-weight: 700;
-background-color: rgb(207, 24, 39);
-color: white;
-border: none;
-border-radius: 10px;
-padding-left: 7%;
-padding-right: 8%;
-font-size: 0.9em;
+    font-weight: 700;
+    background-color: rgb(207, 24, 39);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding-left: 7%;
+    padding-right: 8%;
+    font-size: 0.9em;
 }
+
 .buttonBox>button:hover {
-   background-color: rgb(156, 21, 32);
+    background-color: rgb(156, 21, 32);
 }
+
 #offerCounter {
     width: 100%;
     height: 55px;
@@ -140,16 +160,16 @@ font-size: 0.9em;
 
 
 
-@media all and (min-width:200px) and (max-width:549px){
+@media all and (min-width:200px) and (max-width:549px) {
 
     #innerBox {
         justify-content: center;
-        
+
     }
 
 }
 
-@media all and (min-width:550px) and (max-width:1350px){
+@media all and (min-width:550px) and (max-width:1350px) {
     #innerBox {
         justify-content: center;
         margin-bottom: 5%;

@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apna Pathshala</title>
+    <title>Student sign Up</title>
     <link rel="shortcut icon" href="./ApnaPathsala.png" type="image/x-icon">
     <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="./Styles/navbar.css">
     <script src="https://kit.fontawesome.com/3c6364f3fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/student.css">
+    <script src="./Scripts/index.js"></script>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
         * {
             list-style: none;
         }
@@ -36,107 +33,57 @@
                 <div id="cartBox"><a href="cart.html"><img class="cart"
                             src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a><span
                         class="cartDisplay"></span> </div>
-
             </div>
             <div id="signIn">
                 <button><a href="signin.html">SIGN IN</a></button>
             </div>
         </nav>
     </header>
+
     <section>
+        <div id="container">
 
-        <div id="bannerBox">
-            <div id="container">
-                <div id="headingAndPara">
-                    <h5>Let’s Get You <span id="ready">Ready</span></h5><br>
-                    <p>The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An Internship. Get Placed</p>
+            <div id="boxTop">
+                <div>
+                    <h3 id="login">Register Candidate</h3>
+                    <h3 id="dontHaveAcc">ALready have an account? <a href="signin.html">Sign in</a></h3>
+
+                    <div id="para">
+                        <p>If you are a company looking to hire interns, please login as a company by clicking <a
+                                href=''>here</a>.</p>
+                    </div>
                 </div>
-                <div id="searchBoxcParent">
-                    <div id="childBox">
-                        <div id="city">
-                            <select name="city" id="citySelect">
-                                <option value="">City...</option>
-                                <option value="">Not Lauched</option>
-                            </select>
-                        </div>
-                        <div id="type">
-                            <select name="Type" id="typeSelect">
-                                <option value="">type...</option>
-                                <option value="">Full Time</option>
-                                <option value="">Part Time</option>
-                            </select>
-                        </div>
-                        <div id="preferences">
-                            <select name="preferences" id="preferenceSelect">
-                                <option value="">preference...</option>
-                                <option value="">Admin</option>
-                                <option value="">Business</option>
-                                <option value="">Branding</option>
-                                <option value="">Finance</option>
-                                <option value="">Insaurence</option>
-                            </select>
-                        </div>
-                        <h3 id="or">OR</h3>
+                <div>
+                    <a href="https://www.facebook.com/login/" id="facebook">
+                        <div><img id="facebookimage"
+                                src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg"
+                                alt=""><span></span></div>SIGN IN WITH FACEBOOK
+                    </a>
+                    <br>
+                    <a href="gmail.com" id="google">
+                        <div><img id="googleimage" src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg"
+                                alt=""><span></span></div>SIGN IN WITH GOOGLE
+                    </a> <br> <br>
+                </div>
+                <br>
+                <h5 id="or">OR</h5>
+                <div id="form">
+                    <form id="forminner">
                         <div>
-                            <div id="search">
-                                <div id="searchSelect">
-                                    <input id="searchbox" type="text" placeholder="Search...">
-                                    <button id="searchButton">SEARCH</button>
-                                </div>
-                            </div>
+                            <input type="text" id="name" placeholder="First Name *">
+                            <div></div>
+                            <input type="text" id="lastName" placeholder="Last Name *">
                         </div>
-                    </div>
+                        <input type="text" name="" id="email" placeholder="Emai">
+                        <br>
+                        <input type="password" id="pass" placeholder="Password"> <br>
+                        <br>
 
+                        <input type="submit" value="NEXT">
+                    </form>
                 </div>
             </div>
         </div>
-        <div id="midConatiner">
-            <div id="leftBox">
-                <div id="leftChild">
-                    <h5>PLETHORA OF OPPORTUNITIES <span class="redfont">FOR YOU</span> </h5>
-                    <p>We are on a mission to connect employers to young talent all over India.
-                        With our strong corporate network, it will no longer be a challenge to find the right internship
-                        for you</p>
-                </div>
-            </div>
-            <div id="rightBox"></div>
-        </div>
-        <div id="bottomExpContainer">
-            <h1>LET’S GET SOME <span class="redfont">WORK EXPERIENCE</span>
-            </h1>
-            <div id="imageBox"></div>
-        </div>
-        <div id="upskelling">
-            <div id="upskellingChiledBox">
-                <h1>HOW ABOUT <span class="redfont">UPSKILLING ?</span></h1>
-                <div id="upskellingImage"></div>
-            </div>
-        </div>
-        <div id="AdvetistemtParentContainer">
-            <div id="advetistemtChildContainer">
-                <div id="advetistemtChildContainerleftbox">
-                    <img src="https://assets.interntheory.com/creative/chart.png" alt="Count Tree">
-                </div>
-                <div id="advetistemtChildContainerRightbox">
-                    <h5>WE ARE CONSTANTLY <span class="redfont">GROWING</span></h5>
-                    <p>We are on a mission to help every student in India. Upgrading your CV and getting you a
-                        meaningful job remains our sole motive and we are not stopping anytime soon.</p>
-                </div>
-            </div>
-        </div>
-        <div id="fbox">
-            <div id="footerSlidedr">
-                <div id="sliderChild">
-
-                    <div class="contentBox">
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
     </section>
     <footer>
         <div id="footerContainer">
@@ -202,10 +149,6 @@
             </div>
         </div>
     </footer>
-
-
-    <!-- side menu  -->
-
     <div class="side_bar">
         <div id="sideBarTop">
             <button id="hamburger2"><img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"
@@ -275,18 +218,50 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
 </body>
-<script src="./Scripts/index.js"></script>
+<script>
+    document.getElementById("hamburger1").addEventListener("click", sideMenu);
+
+    function sideMenu() {
+
+        document.querySelector(".side_bar").classList.add("side-class");
+
+    }
+
+    document.getElementById("hamburger2").addEventListener("click", sideMenu1);
+    function sideMenu1() {
+
+
+        document.querySelector(".side_bar").classList.remove("side-class");
+
+    }
+
+    let studentLogData = JSON.parse(localStorage.getItem("studentLogData")) || [];    
+
+document.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    let name = document.querySelector("#name").value;
+    let last_name = document.querySelector("#lastName").value;
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#pass").value;
+    if(name == "" || last_name == "" || email == "" || password == "") {
+        alert("please fill all the filds!")
+    }
+    else {
+        let obj = {
+            name,
+            last_name,
+            email,
+            password,
+        }
+        studentLogData.push(obj);
+        localStorage.setItem("studentLogData",JSON.stringify(studentLogData));
+        alert("Succesfully Registered ! \n Please sign in");
+        window.location.href="index.html"
+    }
+        
+    });
+</script>
+<!-- <script src="./Scripts/index.js"></script> -->
 
 </html>
