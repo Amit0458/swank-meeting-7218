@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course page</title>
+    <link rel="shortcut icon" href="./ApnaPathsala.png" type="image/x-icon">
     <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="./Styles/navbar.css">
     <link rel="stylesheet" href="./Styles/course.css">
     <script src="https://kit.fontawesome.com/3c6364f3fa.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            list-style: none;
+        }
+    </style>
 </head>
+
 
 <body>
     <header>
@@ -22,8 +29,9 @@
             <div id="middleArea">
                 <a href="index.html"><img id="logo" src="./ApnaPathsala.png" alt=""></a>
                 <div id="midspace"></div>
-                <div id="cartBox"><a href="cart.html"><img id="cart"
-                            src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a></div>
+                <div id="cartBox"><a href="cart.html"><img class="cart"
+                            src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a><span
+                        class="cartDisplay"></span> </div>
             </div>
             <div id="signIn">
                 <button><a href="signin.html">SIGN IN</a></button>
@@ -57,64 +65,67 @@
                         <h3>EMI Starting at ₹ 915/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png" alt="">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png"
+                        alt="">
                     <div>
-                        <h5 id="heading">IT Starter Pack (4 Courses)</h5>
+                        <h5 id="heading">Digital Marketing Course</h5>
                         <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
                     </div>
                     <div class="cardBottom">
                         <div class="priceBox">
-                            <h5>₹ 32999</h5>
-                            <h3>₹ 15999</h3>
+                            <h5>₹ 11999</h5>
+                            <h3>₹ 5999</h3>
                         </div>
-                        <h3>EMI Starting at ₹ 915/month ?</h3>
+                        <h3>EMI Starting at ₹ 343/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png" alt="">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png"
+                        alt="">
                     <div>
-                        <h5 id="heading">IT Starter Pack (4 Courses)</h5>
-                        <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
+                        <h5 id="heading">Data Analytics With R Programming Course</h5>
+                        <p>Learn the art of digital marketing. Sign up for this online ...</p>
                     </div>
                     <div class="cardBottom">
                         <div class="priceBox">
-                            <h5>₹ 32999</h5>
-                            <h3>₹ 15999</h3>
+                            <h5>₹ 11999</h5>
+                            <h3>₹ 5999</h3>
                         </div>
-                        <h3>EMI Starting at ₹ 915/month ?</h3>
+                        <h3>EMI Starting at ₹ 343/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png" alt="">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png"
+                        alt="">
                     <div>
-                        <h5 id="heading">IT Starter Pack (4 Courses)</h5>
-                        <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
+                        <h5 id="heading">Web Development Course</h5>
+                        <p>Learn data science online. Join this online data analytics c ...</p>
                     </div>
                     <div class="cardBottom">
                         <div class="priceBox">
-                            <h5>₹ 32999</h5>
-                            <h3>₹ 15999</h3>
+                            <h5>₹ 7999</h5>
+                            <h3>₹ 3999</h3>
                         </div>
-                        <h3>EMI Starting at ₹ 915/month ?</h3>
+                        <h3>EMI Starting at ₹ 229/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
@@ -122,75 +133,78 @@
                 <div class="card">
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png" alt="">
                     <div>
-                        <h5 id="heading">IT Starter Pack (4 Courses)</h5>
-                        <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
+                        <h5 id="heading">Tally + GST Course</h5>
+                        <p>Learn the art of web design and web development. Join this o ...</p>
                     </div>
                     <div class="cardBottom">
                         <div class="priceBox">
-                            <h5>₹ 32999</h5>
-                            <h3>₹ 15999</h3>
+                            <h5>₹ 7999</h5>
+                            <h3>₹ 3999</h3>
                         </div>
-                        <h3>EMI Starting at ₹ 915/month ?</h3>
+                        <h3>EMI Starting at ₹ 229/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png" alt="">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png"
+                        alt="">
                     <div>
-                        <h5 id="heading">IT Starter Pack (4 Courses)</h5>
-                        <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
+                        <h5 id="heading">Android App Development Using Kotlin Course</h5>
+                        <p>Sign up for this online tally and gst course and learn how t ...</p>
                     </div>
                     <div class="cardBottom">
                         <div class="priceBox">
-                            <h5>₹ 32999</h5>
-                            <h3>₹ 15999</h3>
+                            <h5>₹ 7999</h5>
+                            <h3>₹ 3999</h3>
                         </div>
-                        <h3>EMI Starting at ₹ 915/month ?</h3>
+                        <h3>EMI Starting at ₹ 229/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png" alt="">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png"
+                        alt="">
                     <div>
-                        <h5 id="heading">IT Starter Pack (4 Courses)</h5>
-                        <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
+                        <h5 id="heading">Advanced Excel Course</h5>
+                        <p>Master MS Excel. Take the online ms excel course and learn t ...</p>
                     </div>
                     <div class="cardBottom">
                         <div class="priceBox">
-                            <h5>₹ 32999</h5>
-                            <h3>₹ 15999</h3>
+                            <h5>₹ 5999</h5>
+                            <h3>₹ 2999</h3>
                         </div>
-                        <h3>EMI Starting at ₹ 915/month ?</h3>
+                        <h3>EMI Starting at ₹ 172/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="card">
-                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png" alt="">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png"
+                        alt="">
                     <div>
-                        <h5 id="heading">IT Starter Pack (4 Courses)</h5>
-                        <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
+                        <h5 id="heading">R Programming Course</h5>
+                        <p>Learn r programming online. Sign up for this online r progra ...</p>
                     </div>
                     <div class="cardBottom">
                         <div class="priceBox">
-                            <h5>₹ 32999</h5>
-                            <h3>₹ 15999</h3>
+                            <h5>₹ 5999</h5>
+                            <h3>₹ 2999</h3>
                         </div>
-                        <h3>EMI Starting at ₹ 915/month ?</h3>
+                        <h3>EMI Starting at ₹ 172/month ?</h3>
                         <div class="buttonBox">
                             <h3>KNOW MORE</h3>
-                            <button>ADD TO CART</button>
+                            <button class="btn">ADD TO CART</button>
                         </div>
                     </div>
 
@@ -199,7 +213,8 @@
         </div>
     </section>
     <div id="offerCounter">
-        Use Coupon Code FIRSTCOURSE to avail a discount of 20% on your course enrolment. Offer expires in &nbsp;&nbsp; <span id="time"></span>
+        Use Coupon Code FIRSTCOURSE to avail a discount of 20% on your course enrolment. Offer expires in &nbsp;&nbsp;
+        <span id="time"></span>
     </div>
     <footer>
         <div id="footerContainer">
@@ -246,7 +261,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </div>
         <div id="privacyPloiciy">
             <div>
@@ -265,26 +280,139 @@
             </div>
         </div>
     </footer>
+    <div class="side_bar">
+        <div id="sideBarTop">
+            <button id="hamburger2"><img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"
+                    alt="menu"></button>
+            <img id="logo1" src="./ApnaPathsala.png" alt="">
+        </div>
+        <div id="contents">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="" alt=""><i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-list"></i></i>
+                        <p>Internships</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="" alt=""><i class="fa-solid fa-briefcase"></i>
+                        <p>Jobs</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-stack-overflow"></i>
+                        <p>Post Internship</p>
+                    </a>
+                </li>
+                <li>
+                    <a><img src="" alt=""><i class="fa-solid fa-book"></i>
+                        <p>Courses</p>
+                        <div></div><i class="fa-solid fa-chevron-down courses" onclick="expand('.under-sec1')"></i>
+                    </a>
+                    <div class="under-sec1">
+                        <a href="course.html">Online Courses</a>
+                        <a href="course.html">Classroom Training</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="" alt=""><i class="fa-solid fa-phone"></i>
+                        <p>Contact Us</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a><img src="" alt=""><i class="fa-solid fa-lines-leaning"></i>
+                        <p>Register</p><i class="fa-solid fa-chevron-down register" onclick="expand('.under-sec2')"></i>
+                    </a>
+                    <div class="under-sec2">
+                        <a href="./student.html">Student</a>
+                        <a href="./companyRegister.html">Company</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a><img src="" alt=""><i class="fa-solid fa-door-open"></i>
+                        <p>Login</p><i class="fa-solid fa-chevron-down login" onclick="expand('.under-sec3')"
+                            style="margin-left: 45%;"></i>
+                    </a>
+                    <div class="under-sec3">
+                        <a href="signin.html">Student</a>
+                        <a href="signin.html">Login</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
 </body>
 <script>
-    let h=47;
-    let m=60;
-    let s=60;
-    let x = setInterval( () =>{
+    let h = 47;
+    let m = 60;
+    let s = 60;
+    let x = setInterval(() => {
         s--;
-        document.querySelector("#time").textContent = +h+"h "+m+"m "+s+"s";
-        if(s < 1) {
-            s=60;
+        document.querySelector("#time").textContent = +h + "h " + m + "m " + s + "s";
+        if (s < 1) {
+            s = 60;
             m--;
         }
-        if(m < 1) {
-            m=60;
+        if (m < 1) {
+            m = 60;
             h--;
         };
-        if(h == 0 && m == 0 && s == 0) {
+        if (h == 0 && m == 0 && s == 0) {
             clearInterval(x);
         }
-    },1000)
+    }, 1000);
+
+
+    let cart = 0;
+    if (cart == 0) {
+        document.querySelector(".cartDisplay").classList.add("displayCartCount");
+        document.querySelector(".cart").classList.add("cartImgSize");
+    }
+    let buttons = document.querySelectorAll(".btn");
+    buttons.forEach((element) => {
+        element.addEventListener("click", () => {
+            cartADD();
+        });
+    });
+
+    function cartADD() {
+        cart++;
+        if (cart >= 1) {
+            document.querySelector(".cartDisplay").textContent = cart;
+            document.querySelector(".cartDisplay").classList.remove("displayCartCount");
+        }
+        else {
+            document.querySelector(".cartDisplay").classList.add("displayCartCount");
+            document.querySelector(".cart").classList.add("cartImgSize");
+        }
+
+    }
+
+    // *********************************************************************
+    document.getElementById("hamburger1").addEventListener("click", sideMenu);
+
+    function sideMenu() {
+
+        document.querySelector(".side_bar").classList.add("side-class");
+
+    }
+
+    document.getElementById("hamburger2").addEventListener("click", sideMenu1);
+    function sideMenu1() {
+
+
+        document.querySelector(".side_bar").classList.remove("side-class");
+
+    }
+
 </script>
 <script src="./Scripts/index.js"></script>
 

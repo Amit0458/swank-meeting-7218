@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign in</title>
+    <link rel="shortcut icon" href="./ApnaPathsala.png" type="image/x-icon">
     <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="./Styles/navbar.css">
     <link rel="stylesheet" href="./Styles/signin.css">
     <script src="https://kit.fontawesome.com/3c6364f3fa.js" crossorigin="anonymous"></script>
-
+    <script src="./Scripts/index.js"></script>
+    <style>
+        * {
+    list-style: none;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -20,8 +26,8 @@
             <div id="middleArea">
                 <a href="index.html"><img id="logo" src="./ApnaPathsala.png" alt=""></a>
                 <div id="midspace"></div>
-                <div id="cartBox"><a href="cart.html"><img id="cart" src="https://cdn-icons-png.flaticon.com/512/60/60992.png"
-                            alt=""></a></div>
+                <div id="cartBox"><a href="cart.html"><img class="cart"
+                    src="https://cdn-icons-png.flaticon.com/512/60/60992.png" alt=""></a><span class="cartDisplay"></span> </div>
             </div>
             <div id="signIn">
                 <button><a href="signin.html">SIGN IN</a></button>
@@ -189,7 +195,75 @@
             </div>
         </div>
     </footer>
-    
+    <div class="side_bar">
+        <div id="sideBarTop">
+            <button id="hamburger2"><img src="https://cdn-icons-png.flaticon.com/128/2976/2976215.png"
+                    alt="menu"></button>
+            <img id="logo1" src="./ApnaPathsala.png" alt="">
+        </div>
+        <div id="contents">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="" alt=""><i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-solid fa-list"></i></i>
+                        <p>Internships</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="" alt=""><i class="fa-solid fa-briefcase"></i>
+                        <p>Jobs</p>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="" alt=""><i class="fa-brands fa-stack-overflow"></i>
+                        <p>Post Internship</p>
+                    </a>
+                </li>
+                <li>
+                    <a><img src="" alt=""><i class="fa-solid fa-book"></i>
+                        <p>Courses</p>
+                        <div></div><i class="fa-solid fa-chevron-down courses" onclick="expand('.under-sec1')"></i>
+                    </a>
+                    <div class="under-sec1">
+                        <a href="course.html" >Online Courses</a>
+                        <a href="course.html" >Classroom Training</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="" alt=""><i class="fa-solid fa-phone"></i>
+                        <p>Contact Us</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a><img src="" alt=""><i class="fa-solid fa-lines-leaning"></i>
+                        <p>Register</p><i class="fa-solid fa-chevron-down register" onclick="expand('.under-sec2')"></i>
+                    </a>
+                    <div class="under-sec2">
+                        <a href="./student.html">Student</a>
+                        <a href="./companyRegister.html">Company</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a><img src="" alt=""><i class="fa-solid fa-door-open"></i>
+                        <p>Login</p><i class="fa-solid fa-chevron-down login" onclick="expand('.under-sec3')"
+                            style="margin-left: 45%;"></i>
+                    </a>
+                    <div class="under-sec3">
+                        <a href="signin.html" >Student</a>
+                        <a href="signin.html">Login</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        
+    </div>
 </body>
 <script>
     let comapny = document.querySelector("#company");
@@ -210,8 +284,48 @@
 
     });
   
-/*******************side bar**********************************/ 
+// **************************************************************************************
+
+//     document.getElementById("hamburger1").addEventListener("click", sideMenu);
+
+//     function sideMenu() {
+
+//         document.querySelector(".side_bar").classList.add("side-class");
+
+//     }
+
+//     document.getElementById("hamburger2").addEventListener("click", sideMenu1);
+//     function sideMenu1() {
+
+
+// document.querySelector(".side_bar").classList.remove("side-class");
+
+// ********************************************************************************
+let studentData = JSON.parse(localStorage.getItem("studentLogData")) || [];
+
+document.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    let flag = "false";
+    let e = document.querySelector("#email");
+    let p = document.querySelector("#pass");
+    studentData.forEach(element => {
+        if( e.value == element.email && p.value == element.password) {
+            flag = "true";
+
+        }
+       
+    });
+   
+    if(flag == "true" ) {
+
+        alert("Log in Succesfull !");
+        window.location.href="index.html"
+    }
+    else {
+        
+        alert("Wrong Credentials!")
+    } 
+    });
 
 </script>
-<script src="./Scripts/index.js"></script>
 </html>

@@ -1,10 +1,15 @@
 * {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    list-style: none;
+
+
 }
-section {
+
+#section1 {
     background-image: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
     display: flex;
 }
+
 #upperContainer {
     height: auto;
     width: 40%;
@@ -12,17 +17,26 @@ section {
     text-align: center;
     margin-left: 35px;
 }
+
 #upperContainer>div>h1 {
     font-size: 3em;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin-bottom: 10px;
+    margin-top: 60px;
+    width: 80%;
+    margin: auto;
 }
+
 #upperContainer>div>h1>span {
     color: rgb(223, 30, 46);
 }
+
 #upperContainer>div+div>h5 {
     font-size: 1.5em;
     font-weight: 400;
     color: rgb(60, 72, 88);
 }
+
 #upperContainer>div+div>h3 {
     font-size: 1.3em;
     color: rgb(60, 72, 88);
@@ -32,80 +46,145 @@ section {
 
 #imageBox {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 80%;
     margin: auto;
     gap: 20px 10px;
 }
+
 /* ****************signUp********************************** */
 
-#box {
-    height: 800px;
-    width: 70%;
+#boxTop {
+    height: 890px;
+    width: 90%;
     margin: auto;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 13.5%;
     margin-bottom: 5%;
-    padding: 3%;
+    margin-left: 15%;
+    border-radius: 10px;
+    padding: 2%;
     background-color: white;
-    border: 2px solid blue;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 }
+
 #login {
     text-align: left;
     font-size: 1.8em;
     font-weight: 500;
 }
+
 #or {
     margin: auto;
     text-align: center;
     color: rgb(153, 153, 153);
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
+
 #form {
     margin: auto;
     width: 100%;
 }
+
 #forminner {
     width: 100%;
     padding: 1%;
 }
-input[type="text"]
- {
-    width: 100%;
+
+#forminner>div {
+    display: flex;
+}
+
+#forminner>div>div {
+    height: 100%;
+    width: 5%;
+}
+
+#name,
+#lastName {
+    width: 40%;
     padding: 12px;
     border: none;
     border-bottom: 2px solid rgb(138, 138, 138);
     margin-top: 6px;
     margin-bottom: 16px;
     font-size: larger;
+    margin-left: 5%;
 }
 
-input[type="password"]
- {
-    width: 100%;
+input[type="text"] {
+    width: 90%;
     padding: 12px;
-    border:none;
+    border: none;
     border-bottom: 2px solid rgb(138, 138, 138);
     margin-top: 6px;
     margin-bottom: 16px;
     font-size: larger;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid rgb(138, 138, 138);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid rgb(138, 138, 138);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: larger;
+    cursor: pointer;
 }
 
 input[type="submit"] {
+
     background-color: white;
     color: rgb(223, 30, 46);
     padding: 12px 20px;
     border: 1px solid rgb(223, 30, 46);
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: auto;
     font-size: 16px;
     font-weight: 400;
-    margin: auto;
     margin-top: 5%;
-    margin-bottom: 3%;
     text-align: center;
+    margin-left: 15px;
+}
+
+select,
+option {
+    width: 90%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid rgb(138, 138, 138);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 1.2em;
+    color: rgb(138, 138, 138)
+}
+
+option {
+    font-size: 1em;
+
+}
+
+option:hover {
+    color: rgb(138, 138, 138);
 }
 
 input[type="submit"]:hover {
@@ -118,19 +197,18 @@ input[type="submit"]:hover {
 
 }
 
-#spacebox {
-    width: 45%;
-}
 a {
-    color:rgb(48, 140, 226);
+    color: rgb(48, 140, 226);
     text-decoration: none;
 }
+
 #dontHaveAcc {
     margin-top: 5%;
-    text-align: center;
     font-size: 1.2em;
     font-weight: 500;
     color: rgb(153, 153, 166);
+    margin-top: -20px;
+    text-align: left
 }
 
 #para {
@@ -149,7 +227,7 @@ a {
     display: flex;
     text-align: center;
     align-items: center;
-    background-color:rgb(12, 129, 224);
+    background-color: rgb(12, 129, 224);
     color: white;
     justify-content: space-between;
     border-radius: 5px;
@@ -160,9 +238,11 @@ a {
     font-size: 20px;
 
 }
+
 #linkedin:hover {
     background-color: rgb(5, 86, 154);
 }
+
 #linkedin>div {
     background-color: white;
     width: 40px;
@@ -170,15 +250,45 @@ a {
     margin-left: 4%;
     border-radius: 5px;
 }
+
 #linkedimage {
     margin-top: 10%;
     width: 79%;
 }
 
-#optionalLoginOption_sec2 {
-    display: none;
+/* **************mid container************************* */
+
+#midCont {
+    width: 50%;
+
 }
-#company ~ .bottomColor,#student ~ .bottomColor {
-    border-bottom: 2px solid blue;
+
+#topTree {
+    width: 90%;
+    margin-left: 70px;
+}
+
+#topTree>img {
+    width: 80%;
+}
+
+#bottomText {
+    text-align: center;
+    margin-top: -25px;
+}
+
+#bottomText>h5 {
+    font-size: 1.5em;
+    border-bottom: 1px solid grey;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#bottomText>p {
+    margin: auto;
+    margin-top: 10px;
+    width: 65%;
+    font-size: 1.1em rgb(60, 72, 93);
 
 }

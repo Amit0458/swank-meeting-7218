@@ -1,26 +1,28 @@
 * {
-    box-sizing: border-box;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     list-style: none;
-    
-    
 }
-#container {
+
+section {
     height: auto;
     width: 100%;
     background-image: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
 }
-#box {
-    height: auto;
-    width: 40%;
+
+#container {
+    margin: auto;
+    width: 50%;
+}
+#boxTop {
+    width: 80%;
     margin: auto;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 100px;
     margin-bottom: 5%;
-    padding: 3%;
+    margin-left: 15%;
+    border-radius: 10px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
+    padding: 3%;
 }
 #login {
     text-align: left;
@@ -28,7 +30,12 @@
     font-weight: 500;
 }
 #or {
+    margin: auto;
+    text-align: center;
     color: rgb(153, 153, 153);
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 #form {
     margin: auto;
@@ -38,42 +45,82 @@
     width: 100%;
     padding: 1%;
 }
-input[type="text"]
- {
-    width: 100%;
+#forminner>div {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+#forminner>div>div {
+    height: 100%;
+    width: 5%;
+}
+#name,#lastName {
+    width: 48%;
     padding: 12px;
     border: none;
     border-bottom: 2px solid rgb(138, 138, 138);
     margin-top: 6px;
     margin-bottom: 16px;
     font-size: larger;
+    
 }
+input[type="text"]
+ {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid rgb(138, 138, 138);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: larger;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+}
+
 
 input[type="password"]
  {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border:none;
     border-bottom: 2px solid rgb(138, 138, 138);
     margin-top: 6px;
     margin-bottom: 16px;
     font-size: larger;
+    cursor: pointer;
 }
 
 input[type="submit"] {
+    width: 90%;
     background-color: white;
     color: rgb(223, 30, 46);
     padding: 12px 20px;
     border: 1px solid rgb(223, 30, 46);
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
     font-size: 16px;
     font-weight: 400;
-    margin: auto;
     margin-top: 5%;
-    margin-bottom: 3%;
     text-align: center;
+}
+select,option {
+    width: 90%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid rgb(138, 138, 138);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 1.2em;
+    color: rgb(138, 138, 138)
+    
+}
+option {
+    font-size: 1em;
+
+}
+option:hover {
+    color:rgb(138, 138, 138);
 }
 
 input[type="submit"]:hover {
@@ -92,34 +139,17 @@ input[type="submit"]:hover {
 a {
     color:rgb(48, 140, 226);
     text-decoration: none;
+    font-size: 0.85em;
 }
 #dontHaveAcc {
     margin-top: 5%;
-    text-align: center;
     font-size: 1.2em;
     font-weight: 500;
     color: rgb(153, 153, 166);
+    margin-top: -20px;
+    text-align: left
 }
-#option {
-    height: 50px;
-    width: 100%;
-}
-#student,#company {
-    width: 49.5%;
-    height: 49px;
-    font-size: 0.95em;
-    border: none;
-    color: rgb(117, 117, 117);
-    background-color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-#student:hover {
-    color: rgb(8, 124, 221);
-}
-#company:hover {
-    color: rgb(8, 124, 221);
-}
+
 #para {
     text-align: left;
     font-size: 16px;
@@ -132,38 +162,38 @@ a {
 
 }
 #facebook>div {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  margin-left: 4%;
-  border-radius: 5px;
-}
-#google>div {
     background-color: white;
     width: 40px;
     height: 40px;
     margin-left: 4%;
     border-radius: 5px;
-}
-#facebookimage,#googleimage {
-    margin-top: 10%;
-    width: 79%;
-}
-
-#facebook,#google {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(66, 103, 178);
-    color: white;
-    justify-content: space-between;
-    text-decoration: none;
-    padding-right: 25%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-    border-radius: 5px;
-}
+  }
+  #google>div {
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      margin-left: 4%;
+      border-radius: 5px;
+  }
+  #facebookimage,#googleimage {
+      margin-top: 10%;
+      width: 79%;
+  }
+  
+  #facebook,#google {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      background-color: rgb(66, 103, 178);
+      color: white;
+      justify-content: space-between;
+      text-decoration: none;
+      padding-right: 25%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      font-size: 20px;
+      border-radius: 5px;
+  }
 #google {
     display: flex;
     text-align: center;
@@ -181,24 +211,6 @@ a {
 #google:hover {
     background-color: rgb(5, 86, 154);
 }
-#linkedin {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background-color:rgb(12, 129, 224);
-    color: white;
-    justify-content: space-between;
-    border-radius: 5px;
-    text-decoration: none;
-    padding-right: 25%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 20px;
-
-}
-#linkedin:hover {
-    background-color: rgb(5, 86, 154);
-}
 #linkedin>div {
     background-color: white;
     width: 40px;
@@ -210,13 +222,3 @@ a {
     margin-top: 10%;
     width: 79%;
 }
-
-#optionalLoginOption_sec2 {
-    display: none;
-}
-#company ~ .bottomColor,#student ~ .bottomColor {
-    border-bottom: 2px solid blue;
-
-}
-
-
